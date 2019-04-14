@@ -1,0 +1,37 @@
+intents:
+  - greet
+  - function
+  - goodbye
+  - unknown
+  - confused
+  - unhappy
+
+actions:
+- utter_greet
+- utter_function
+- utter_goodbye
+- utter_fact
+- utter_clarity
+- utter_cheer
+
+templates:
+  utter_greet:
+  - text: "Hey there!"
+    buttons:
+    -  title: "great"
+       payload: "Great"
+    -  title: "sad"
+       payload: "Sad"
+
+  utter_function:
+  - text: "I am a simple web based chatbot developed using rasa"
+
+  utter_goodbye:
+  - text: "Bye, thanks for chatting with web based bot!"
+
+  utter_fact:
+  - text: "You want a random fact ?...Most Of The Dogs In The World Actually Understand Some English"
+  utter_clarity:
+  - text: "Dont worry i`m dumb, I am not programmed to tackle deep shit YET!."
+  utter_cheer:
+  - text: "Dont worry you will have a good day"
